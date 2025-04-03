@@ -1,0 +1,42 @@
+.bracket {
+    display: flex;
+    align-items: center;
+    /* gap: 10px; */
+    justify-content: center;
+    height: 100vh;
+    background-image: url('https://wallpapersok.com/images/high/sport-three-darts-in-dartboard-f4wp5p7au637wh4r.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.score-input{
+    width: 60px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.match {
+    display: flex;
+    align-items: center;
+    /* gap: 10px; */
+    position: relative;
+}
+
+.line {
+    width: 40px;
+    height: 2px;
+    background-color: rgb(232, 197, 3);
+}
+
+.vertical-line {
+    position: absolute;
+    width: 2px;
+    height: 40px;
+    background-color: black;
+    left: 50%;
+}
