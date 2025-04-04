@@ -16,9 +16,11 @@ function createWindow() {
     },
   });
 
-  const startURL = process.env.NODE_ENV === 'development' 
-    ? 'http://localhost:5173' 
-    : `file://${path.join(__dirname, '../dist/index.html')}`;
+  // const startURL = process.env.NODE_ENV === 'development' 
+  //   ? 'http://localhost:5173' 
+  //   : `file://${path.join(__dirname, '../dist/index.html')}`;
+
+  const startURL = 'http://localhost:5173'
 
   mainWindow.loadURL(startURL);
   if (process.env.NODE_ENV === 'development') mainWindow.webContents.openDevTools();
